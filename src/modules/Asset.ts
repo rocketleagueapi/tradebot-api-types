@@ -1,8 +1,3 @@
-export enum AssetType {
-    GIVE = 'GIVE',
-    GET = 'GET'
-}
-
 export default interface Asset {
     id: number;
     item: number;
@@ -12,5 +7,4 @@ export default interface Asset {
     cert: number;
     quality: number;
     series: number;
-    type: AssetType;
 }

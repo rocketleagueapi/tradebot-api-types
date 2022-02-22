@@ -9,6 +9,7 @@ import LobbyState from './modules/LobbyState';
 import Platform from './modules/Platform';
 import Player from './modules/Player';
 import Trade from './modules/Trade';
+import User from './modules/User';
 
 export interface EmitEvents {
     updateBot: Endpoint<[deviceAuth: DeviceAuth], true>;
@@ -53,6 +54,7 @@ export interface EmitEvents {
     >;
     resolveUser: Endpoint<[botId: string, resolvable: string, platform: Platform], AccountResolution>;
     getItems: Endpoint<[], Record<string, Item>>;
+    createUser: Endpoint<[username: string], User>;
 }
 
 export interface ListenEvents {
