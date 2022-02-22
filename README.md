@@ -25,10 +25,19 @@ or
 ## Example Usage
 ```ts
 import { ListenEvents, EmitEvents } from '@rocketleagueapi/tradebot-api-types'
+import io, { Socket } from 'socket.io-client';
 
-// Where 32 is the product ID
-const alphaBoost = products[32];
-console.log(alphaBoost.paintable) // false
+const socket: Socket<ListenEvents, EmitEvents> = io('https://tradebot.anga.blue', {
+    auth: {
+        key: process.env.TRADEBOT_API_KEY
+    }
+});
+
+socket.on('connect', () => {
+    console.log('Connected to Tradebot API');
+
+    socket.emit('getItems', console.log);
+});
 ```
 
 ## 📝 License
