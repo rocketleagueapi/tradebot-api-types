@@ -1,0 +1,27 @@
+{
+  "name": "@rocketleagueapi/tradebot-api-types",
+  "version": "1.0.0",
+  "description": "Typings for the Rocket League Tradebot API.",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . --ext js,jsx,ts,tsx --fix",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocketleagueapi/items.git"
+  },
+  "author": "Rocket League API",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rocketleagueapi/items/issues"
+  },
+  "homepage": "https://github.com/rocketleagueapi/items#readme",
+  "devDependencies": {
+    "@angablue/eslint-config": "^1.3.1",
+    "@types/node": "^17.0.19",
+    "eslint": "^8.9.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}
