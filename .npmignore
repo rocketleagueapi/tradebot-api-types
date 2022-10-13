@@ -1,3 +1,6 @@
+# Source
 src/
-tsconfig.json
+
+# Configuration files
+tsconfig.*.json
 .*
