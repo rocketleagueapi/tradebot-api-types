@@ -8,7 +8,7 @@
   "sideEffects": false,
   "scripts": {
     "lint": "eslint . --ext js,jsx,ts,tsx --fix",
-    "build": "tsc"
+    "build": "tsc -p ./tsconfig.node.json && tsc -p ./tsconfig.browser.json"
   },
   "repository": {
     "type": "git",
