@@ -21,4 +21,4 @@ export { default as Player } from './modules/Player';
 export { default as Trade } from './modules/Trade';
 export { default as TradeBotState } from './modules/TradeBotState';
 export { default as User } from './modules/User';
-export { default as Transfer, BotTransfer } from './modules/Transfer';
+export { default as Transfer, BotTransfer, BotTransferResult, TransferResult } from './modules/Transfer';
