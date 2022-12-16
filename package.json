@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/rocketleagueapi/tradebot-api-types#readme",
   "devDependencies": {
-    "@angablue/eslint-config": "^1.4.1",
-    "@types/node": "^18.11.9",
-    "eslint": "^8.27.0",
-    "prettier": "^2.7.1",
-    "typescript": "^4.9.3"
+    "@angablue/eslint-config": "^1.4.3",
+    "@types/node": "^18.11.15",
+    "eslint": "^8.29.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   }
 }

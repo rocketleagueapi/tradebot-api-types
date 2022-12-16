@@ -5,6 +5,7 @@ import DeviceAuth from './modules/DeviceAuth';
 import Endpoint from './modules/Endpoint';
 import Item from './modules/Item';
 import LobbyDestroyedReason from './modules/LobbyDestroyedReason';
+import LobbyOptions from './modules/LobbyOptions';
 import LobbyState from './modules/LobbyState';
 import Platform from './modules/Platform';
 import Player from './modules/Player';
@@ -24,7 +25,7 @@ export interface EmitEvents {
             credits: number;
         }
     >;
-    createLobby: Endpoint<[botId: string, playerId: Player], AccountResolution>;
+    createLobby: Endpoint<[botId: string, playerId: Player, options?: LobbyOptions], AccountResolution>;
     destroyLobby: Endpoint<[botId: string], true>;
     inviteToLobby: Endpoint<[botId: string], true>;
     sendChatMessage: Endpoint<[botId: string, message: string], true>;
