@@ -1,6 +1,6 @@
 {
   "name": "@rocketleagueapi/tradebot-api-types",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Typings for the Rocket League Tradebot API.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
