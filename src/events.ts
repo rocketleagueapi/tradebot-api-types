@@ -1,7 +1,7 @@
 import AccountResolution from './modules/AccountResolution';
 import Asset from './modules/Asset';
 import Bot from './modules/Bot';
-import DeviceAuth from './modules/DeviceAuth';
+import Auth from './modules/Auth';
 import Endpoint from './modules/Endpoint';
 import Item from './modules/Item';
 import LobbyDestroyedReason from './modules/LobbyDestroyedReason';
@@ -14,7 +14,7 @@ import Transfer, { TransferResult } from './modules/Transfer';
 import User from './modules/User';
 
 export interface EmitEvents {
-    updateBot: Endpoint<[deviceAuth: DeviceAuth], true>;
+    updateBot: Endpoint<[auth: Auth], true>;
     getBots: Endpoint<[], Bot[]>;
     restartBot: Endpoint<[botId: string], true>;
     stopBot: Endpoint<[botId: string], true>;

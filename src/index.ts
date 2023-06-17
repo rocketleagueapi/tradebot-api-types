@@ -11,7 +11,7 @@ export * from './events';
 export { default as AccountResolution, LinkedAccount } from './modules/AccountResolution';
 export { default as Asset } from './modules/Asset';
 export { default as Bot } from './modules/Bot';
-export { default as DeviceAuth } from './modules/DeviceAuth';
+export { default as DeviceAuth } from './modules/Auth';
 export { default as Endpoint } from './modules/Endpoint';
 export { default as Item } from './modules/Item';
 export { default as LobbyDestroyedReason } from './modules/LobbyDestroyedReason';
