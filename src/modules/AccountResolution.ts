@@ -5,6 +5,7 @@ export default interface AccountResolution {
     name: string;
     accounts: LinkedAccount[];
     canTrade: boolean;
+    maxCredits: number;
 }
 
 export interface LinkedAccount {
@@ -12,4 +13,5 @@ export interface LinkedAccount {
     name: string;
     platform: Platform;
     canTrade: boolean;
+    maxCredits: number;
 }
