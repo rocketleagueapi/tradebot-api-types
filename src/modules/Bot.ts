@@ -7,4 +7,5 @@ export default interface Bot {
     platform: Platform;
     botId: string;
     state: TradeBotState;
+    level: number;
 }
